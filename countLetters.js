@@ -1,13 +1,15 @@
 var inputArray = ["lighthouse in the house"].toString().split(" ").join("").toLowerCase();
+// console.log(inputArray);
 
 function countLetters(inputArray) {
   var result = {};
   for (var i = 0; i < inputArray.length; i++) {
     var letter = inputArray.charAt(i)
     if (result[letter]) {
-      result[letter] += 1
-    } else result[letter] = 1
+        result[letter] += 1
+      } else result[letter] = 1
+    }
+    console.log(result);
   }
-  console.log(result);
-}
-countLetters(inputArray);
+
+  countLetters(inputArray);
